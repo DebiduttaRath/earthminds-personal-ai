@@ -15,6 +15,8 @@ from bi_core.graph import build_business_graph
 from bi_core.settings import settings
 from bi_core.business_workflows import BusinessIntelligenceWorkflow
 from bi_core.telemetry import setup_telemetry, get_logger
+from bi_core.memory_optimizer import memory_optimizer
+from bi_core.anti_hallucination import verify_analysis_reliability
 
 # Initialize telemetry
 setup_telemetry()
@@ -41,6 +43,12 @@ if "workflow" not in st.session_state:
 
 if "analysis_history" not in st.session_state:
     st.session_state.analysis_history = []
+
+if "reliability_reports" not in st.session_state:
+    st.session_state.reliability_reports = []
+
+if "memory_stats" not in st.session_state:
+    st.session_state.memory_stats = []
 
 # Sidebar configuration
 with st.sidebar:
@@ -81,6 +89,9 @@ with st.sidebar:
     # Advanced settings
     with st.expander("Advanced Settings"):
         reasoning_enabled = st.checkbox("Enable Reasoning Traces", value=True)
+        reliability_check = st.checkbox("Enable Reliability Verification", value=True)
+        memory_optimization = st.checkbox("Enable Memory Optimization", value=True)
+        enhanced_search = st.checkbox("Use Enhanced Data Sources", value=True)
         max_tokens = st.slider("Max Tokens", 512, 4096, 2048)
         temperature = st.slider("Temperature", 0.0, 1.0, 0.6, 0.1)
     
@@ -88,6 +99,12 @@ with st.sidebar:
     st.subheader("📈 Session Stats")
     st.metric("Analyses Run", len(st.session_state.analysis_history))
     st.metric("Current Backend", selected_backend.upper())
+    
+    # Memory usage stats
+    if memory_optimization:
+        mem_stats = memory_optimizer.get_memory_stats()
+        st.metric("Memory Usage (MB)", f"{mem_stats.get('rss_mb', 0):.1f}")
+        st.metric("Cache Size", f"{mem_stats.get('ttl_cache_size', 0) + mem_stats.get('lru_cache_size', 0)}")
     
     # Clear history button
     if st.button("Clear History", type="secondary"):
@@ -177,6 +194,8 @@ with col2:
                 response_content = ""
                 reasoning_content = ""
                 sources = []
+                tool_execution_log = []
+                reliability_report = None
                 
                 for i, event in enumerate(events):
                     progress_bar.progress(min(i * 0.1, 0.9))
@@ -201,11 +220,34 @@ with col2:
                     if "sources" in event:
                         sources = event["sources"]
                     
+                    # Log tool executions
+                    if "tool_calls" in str(event):
+                        tool_execution_log.append({
+                            "timestamp": datetime.now().isoformat(),
+                            "action": "tool_execution",
+                            "details": str(event)
+                        })
+                    
                     # Update status
                     if "tool_calls" in str(event):
-                        status_text.text("🔍 Gathering information...")
+                        if enhanced_search:
+                            status_text.text("🔍 Gathering from enhanced data sources...")
+                        else:
+                            status_text.text("🔍 Gathering information...")
                     elif response_content:
                         status_text.text("🧠 Analyzing data...")
+                
+                # Generate reliability report if enabled
+                if reliability_check and response_content and sources:
+                    status_text.text("🔍 Verifying reliability...")
+                    reliability_report = verify_analysis_reliability(
+                        response_content, sources, analysis_type
+                    )
+                    st.session_state.reliability_reports.append(reliability_report)
+                
+                # Memory cleanup if enabled
+                if memory_optimization and len(st.session_state.analysis_history) % 5 == 0:
+                    memory_optimizer.cleanup_memory()
                 
                 progress_bar.progress(1.0)
                 status_text.text("✅ Analysis complete!")

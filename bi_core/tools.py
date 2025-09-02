@@ -13,6 +13,9 @@ from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_excep
 from langchain_core.tools import tool
 from bi_core.settings import settings
 from bi_core.telemetry import get_logger
+from bi_core.memory_optimizer import memory_optimizer, AsyncDataProcessor
+from bi_core.anti_hallucination import verify_analysis_reliability, get_source_credibility_scores
+from bi_core.enhanced_data_sources import ENHANCED_DATA_TOOLS, comprehensive_data_search
 from utils.web_scraper import get_website_text_content
 import re
 from datetime import datetime, timedelta
@@ -467,7 +470,75 @@ def market_data_search(ticker_or_company: str) -> Dict[str, Any]:
         logger.error(f"Market data search failed: {e}")
         return {"error": str(e), "company": ticker_or_company}
 
-# Tool registry for the graph
+# Enhanced tool with caching and reliability checking
+@tool
+def enhanced_business_search(query: str, analysis_type: str = "general") -> List[Dict[str, Any]]:
+    """
+    Enhanced business search with caching, memory optimization, and reliability verification.
+    Combines multiple data sources and applies anti-hallucination guards.
+    """
+    try:
+        # Check cache first
+        cache_key = memory_optimizer.get_cache_key(query, analysis_type)
+        cached_result = memory_optimizer.get_cached_result(cache_key)
+        
+        if cached_result:
+            logger.info(f"Returning cached search results for: {query[:50]}...")
+            return cached_result
+        
+        # Use comprehensive search with enhanced data sources
+        results = comprehensive_data_search(
+            query, 
+            include_academic=True, 
+            include_regulatory=True, 
+            include_news=True
+        )
+        
+        # Add traditional search results
+        wiki_results = business_wiki_search(query)
+        web_results = business_web_search(query)
+        
+        # Combine all results
+        all_results = results + wiki_results + web_results
+        
+        # Apply memory optimization
+        optimized_results = memory_optimizer.batch_process_documents(all_results)
+        
+        # Apply similarity search to get most relevant results
+        final_results = memory_optimizer.similarity_search(query, optimized_results, top_k=10)
+        
+        # Add credibility scores
+        credibility_scores = get_source_credibility_scores(final_results)
+        for result in final_results:
+            url = result.get('url', '')
+            result['credibility_score'] = credibility_scores.get(url, 0.5)
+        
+        # Cache the results
+        memory_optimizer.cache_result(cache_key, final_results)
+        
+        logger.info(f"Enhanced search completed: {len(final_results)} results with reliability scores")
+        return final_results
+        
+    except Exception as e:
+        logger.error(f"Enhanced business search failed: {e}")
+        # Fallback to basic search
+        return business_web_search(query)
+
+@tool
+def verify_information_reliability(content: str, sources: List[Dict[str, Any]], analysis_type: str) -> Dict[str, Any]:
+    """
+    Verify the reliability and accuracy of business analysis information.
+    Provides confidence scores and recommendations for fact-checking.
+    """
+    try:
+        reliability_report = verify_analysis_reliability(content, sources, analysis_type)
+        logger.info(f"Reliability verification completed for {analysis_type}")
+        return reliability_report
+    except Exception as e:
+        logger.error(f"Reliability verification failed: {e}")
+        return {"error": str(e), "confidence_metrics": {"overall_confidence": 0.5}}
+
+# Tool registry for the graph - Enhanced with new capabilities
 BUSINESS_TOOLS = [
     business_wiki_search,
     business_web_search,
@@ -475,5 +546,7 @@ BUSINESS_TOOLS = [
     analyze_financial_metrics,
     company_news_search,
     business_calculator,
-    market_data_search
-]
+    market_data_search,
+    enhanced_business_search,
+    verify_information_reliability
+] + ENHANCED_DATA_TOOLS
