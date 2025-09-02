@@ -1,0 +1,29 @@
+2025-09-02 14:49:03,518 - bi_core.graph - INFO - Business intelligence graph compiled successfully
+2025-09-02 14:49:03,519 - __main__ - INFO - Business intelligence graph initialized
+2025-09-02 14:49:03,533 - bi_core.graph - INFO - Business intelligence graph compiled successfully
+2025-09-02 14:49:07,548 - bi_core.graph - INFO - Business intelligence graph compiled successfully
+2025-09-02 14:49:07,548 - __main__ - INFO - Business intelligence graph initialized
+2025-09-02 14:49:07,563 - bi_core.graph - INFO - Business intelligence graph compiled successfully
+2025-09-02 14:50:05,171 - __main__ - INFO - Starting Market Research analysis
+2025-09-02 14:50:05,187 - bi_core.graph - INFO - Analyzing business query: Market Research
+2025-09-02 14:50:05,190 - bi_core.llm_factory - ERROR - Failed to initialize groq LLM: GROQ_API_KEY not configured
+2025-09-02 14:50:05,191 - bi_core.llm_factory - INFO - Attempting fallback to Ollama...
+2025-09-02 14:50:05,192 - bi_core.llm_factory - INFO - Initialized Ollama LLM: deepseek-v3
+2025-09-02 14:50:05,192 - bi_core.graph - ERROR - Business analysis failed: 
+2025-09-02 14:50:05,194 - bi_core.graph - INFO - Synthesizing results for Market Research
+2025-09-02 14:50:05,194 - bi_core.llm_factory - ERROR - Failed to initialize groq LLM: GROQ_API_KEY not configured
+2025-09-02 14:50:05,195 - bi_core.llm_factory - INFO - Attempting fallback to Ollama...
+2025-09-02 14:50:05,195 - bi_core.llm_factory - INFO - Initialized Ollama LLM: deepseek-v3
+2025-09-02 14:50:05,199 - bi_core.graph - ERROR - Synthesis failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f4399b6c710>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-02 14:50:05,202 - __main__ - INFO - Analysis completed successfully
+2025-09-02 15:01:02,123 - bi_core.memory_optimizer - INFO - Memory optimizer initialized
+2025-09-02 15:01:02,548 - bi_core.graph - INFO - Business intelligence graph compiled successfully
+2025-09-02 15:01:02,550 - __main__ - INFO - Business intelligence graph initialized
+2025-09-02 15:01:02,578 - bi_core.graph - INFO - Business intelligence graph compiled successfully
+2025-09-02 15:02:27,397 - bi_core.memory_optimizer - INFO - Memory optimizer initialized
+2025-09-02 15:02:27,730 - bi_core.graph - INFO - Business intelligence graph compiled successfully
+2025-09-02 15:02:27,730 - __main__ - INFO - Business intelligence graph initialized
+2025-09-02 15:02:27,741 - bi_core.graph - INFO - Business intelligence graph compiled successfully
+2025-09-02 15:02:44,619 - bi_core.graph - INFO - Business intelligence graph compiled successfully
+2025-09-02 15:02:44,619 - __main__ - INFO - Business intelligence graph initialized
+2025-09-02 15:02:44,633 - bi_core.graph - INFO - Business intelligence graph compiled successfully
