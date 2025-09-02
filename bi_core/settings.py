@@ -12,7 +12,7 @@ class Settings(BaseModel):
     
     # Groq Configuration
     groq_api_key: str = Field(default=os.getenv("GROQ_API_KEY", ""))
-    groq_model: str = Field(default=os.getenv("GROQ_MODEL", "deepseek-r1-distill-llama-70b"))
+    groq_model: str = Field(default=os.getenv("GROQ_MODEL", "llama-3.1-70b-versatile"))
     
     # DeepSeek Configuration
     deepseek_api_key: str = Field(default=os.getenv("DEEPSEEK_API_KEY", ""))
