@@ -47,4 +47,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
     CMD curl -f http://localhost:5000/_stcore/health || exit 1
 
 # Run the application
-CMD ["streamlit", "run", "main.py", "--server.port", "5000", "--server.address", "0.0.0.0"]
+CMD ["streamlit", "run", "main_simple.py", "--server.port", "5000", "--server.address", "0.0.0.0"]
