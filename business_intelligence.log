@@ -38,3 +38,105 @@
 2025-09-03 17:09:02,910 - __main__ - ERROR - ❌ Failed to import BI components: cannot import name 'init_chat_model' from 'langchain_core.language_models' (/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/langchain_core/language_models/__init__.py)
 2025-09-03 17:09:02,914 - __main__ - WARNING - ⚠️ Telemetry initialization failed: name 'setup_telemetry' is not defined
 2025-09-03 17:11:19,061 - __main__ - ERROR - ❌ Failed to import BI components: No module named 'langchain_openai'
+2025-09-03 17:18:07,466 - __main__ - INFO - Searching web for: Analyze the market size, growth trends, and competitive landscape for [INDUSTRY/PRODUCT]. Include key players and market opportunities.
+2025-09-03 17:18:07,584 - primp - INFO - response: https://www.bing.com/search?q=Analyze+the+market+size%2C+growth+trends%2C+and+competitive+landscape+for+%5BINDUSTRY%2FPRODUCT%5D.+Include+key+players+and+market+opportunities.&filters=ex1%3A%22ez5_19969_20334%22 200
+2025-09-03 17:18:08,448 - primp - INFO - response: https://www.bing.com/search?q=Analyze+the+market+size%2C+growth+trends%2C+and+competitive+landscape+for+%5BINDUSTRY%2FPRODUCT%5D.+Include+key+players+and+market+opportunities.&filters=ex1%3A%22ez5_19969_20334%22&first=11&FORM=PERE 200
+2025-09-03 17:18:09,630 - primp - INFO - response: https://www.bing.com/search?q=Analyze+the+market+size%2C+growth+trends%2C+and+competitive+landscape+for+%5BINDUSTRY%2FPRODUCT%5D.+Include+key+players+and+market+opportunities.&filters=ex1%3A%22ez5_19969_20334%22&first=21&FORM=PERE1 200
+2025-09-03 17:18:09,970 - __main__ - INFO - Found 10 search results
+2025-09-03 17:18:09,972 - __main__ - INFO - Scraping content from: https://www.giiresearch.com/report/psm1803201-us-structural-metal-market-size-share-analysis.html
+2025-09-03 17:18:10,843 - __main__ - INFO - Scraped 7638 characters
+2025-09-03 17:18:10,843 - __main__ - INFO - Scraping content from: https://www.giiresearch.com/report/psm1803159-us-lime-market-size-share-analysis-emerging-trends.html
+2025-09-03 17:18:11,281 - __main__ - INFO - Scraped 8068 characters
+2025-09-03 17:18:11,282 - __main__ - INFO - Scraping content from: https://www.giiresearch.com/report/psm1803317-skin-booster-market-size-share-analysis-emerging.html
+2025-09-03 17:18:11,717 - __main__ - INFO - Scraped 7539 characters
+2025-09-03 17:18:11,718 - __main__ - INFO - Scraping content from: https://www.giiresearch.com/report/psm1803180-us-voice-recognition-software-market-size-share.html
+2025-09-03 17:18:12,144 - __main__ - INFO - Scraped 8546 characters
+2025-09-03 17:18:12,146 - __main__ - INFO - Scraping content from: https://www.giiresearch.com/report/psm1803173-us-fence-construction-market-size-share-analysis.html
+2025-09-03 17:18:12,584 - __main__ - INFO - Scraped 7861 characters
+2025-09-03 17:18:12,586 - __main__ - INFO - Scraping content from: https://www.giiresearch.com/report/psm1803200-waste-energy-market-size-share-analysis-emerging.html
+2025-09-03 17:18:13,016 - __main__ - INFO - Scraped 7319 characters
+2025-09-03 17:18:13,018 - __main__ - INFO - Scraping content from: https://businesscasestudies.co.uk/what-is-market-analysis/
+2025-09-03 17:18:13,850 - __main__ - INFO - Scraped 15023 characters
+2025-09-03 17:18:13,851 - __main__ - INFO - Scraping content from: https://fastercapital.com/content/Competitive-Landscape--How-to-Map-and-Monitor-the-Key-Players-in-Your-Industry.html
+2025-09-03 17:18:14,437 - __main__ - INFO - Scraped 0 characters
+2025-09-03 17:18:14,437 - __main__ - INFO - Scraping content from: https://nxtforum.org/general/how-does-nxt-fix-the-nothing-at-stake-problem/100/index.html
+2025-09-03 17:18:15,293 - __main__ - INFO - Scraped 44 characters
+2025-09-03 17:18:15,294 - __main__ - INFO - Scraping content from: https://nxtforum.org/news-and-announcements/another-small-contest-and-product-of-the-month/index.html
+2025-09-03 17:18:15,497 - __main__ - INFO - Scraped 44 characters
+2025-09-03 17:18:15,514 - __main__ - INFO - Analysis completed successfully: Market Research
+2025-09-03 17:19:02,328 - __main__ - INFO - Searching web for: Conduct detailed financial analysis of [APPLE] including revenue, profitability, debt, cash flow, and financial health.
+2025-09-03 17:19:02,418 - primp - INFO - response: https://www.bing.com/search?q=Conduct+detailed+financial+analysis+of+%5BAPPLE%5D+including+revenue%2C+profitability%2C+debt%2C+cash+flow%2C+and+financial+health.&filters=ex1%3A%22ez5_19969_20334%22 200
+2025-09-03 17:19:03,761 - primp - INFO - response: https://www.bing.com/search?q=Conduct+detailed+financial+analysis+of+%5BAPPLE%5D+including+revenue%2C+profitability%2C+debt%2C+cash+flow%2C+and+financial+health.&filters=ex1%3A%22ez5_19969_20334%22&first=11&FORM=PERE 200
+2025-09-03 17:19:04,893 - primp - INFO - response: https://www.bing.com/search?q=Conduct+detailed+financial+analysis+of+%5BAPPLE%5D+including+revenue%2C+profitability%2C+debt%2C+cash+flow%2C+and+financial+health.&filters=ex1%3A%22ez5_19969_20334%22&first=21&FORM=PERE1 200
+2025-09-03 17:19:05,192 - __main__ - INFO - Found 10 search results
+2025-09-03 17:19:05,194 - __main__ - INFO - Scraping content from: https://fastercapital.com/content/Financial-Analysis--How-to-Conduct-a-Comprehensive-Financial-Analysis-for-Your-Business.html
+2025-09-03 17:19:05,868 - __main__ - INFO - Scraped 0 characters
+2025-09-03 17:19:05,870 - __main__ - INFO - Scraping content from: https://financefacts101.com/key-ratios-measuring-and-analyzing-a-companys-financial-performance/
+2025-09-03 17:19:06,044 - __main__ - INFO - Scraped 15023 characters
+2025-09-03 17:19:06,044 - __main__ - INFO - Scraping content from: https://fastercapital.com/content/Revenue-Analysis--How-to-Conduct-a-Revenue-Analysis-and-Identify-Your-Strengths-and-Weaknesses.html
+2025-09-03 17:19:06,282 - __main__ - INFO - Scraped 0 characters
+2025-09-03 17:19:06,285 - __main__ - INFO - Scraping content from: https://accountinginsights.org/how-to-analyze-financial-statements-step-by-step/
+2025-09-03 17:19:06,755 - __main__ - INFO - Scraped 7976 characters
+2025-09-03 17:19:06,756 - __main__ - INFO - Scraping content from: https://thecfoclub.com/operational-finance/financial-analysis-report/
+2025-09-03 17:19:06,842 - __main__ - ERROR - Content scraping failed for https://thecfoclub.com/operational-finance/financial-analysis-report/: 403 Client Error: Forbidden for url: https://thecfoclub.com/operational-finance/financial-analysis-report/
+2025-09-03 17:19:06,844 - __main__ - INFO - Scraping content from: https://onlineamrita.com/blog/financial-statement-analysis-everything-you-need-to-know/
+2025-09-03 17:19:08,070 - __main__ - INFO - Scraped 1366 characters
+2025-09-03 17:19:08,070 - __main__ - INFO - Scraping content from: https://www.rho.co/blog/cash-flow-analysis/
+2025-09-03 17:19:08,791 - __main__ - INFO - Scraped 9258 characters
+2025-09-03 17:19:08,795 - __main__ - INFO - Scraping content from: https://devineconsultingllc.com/how-to-create-a-comprehensive-finance-analysis-report/
+2025-09-03 17:19:09,163 - __main__ - INFO - Scraped 10308 characters
+2025-09-03 17:19:09,165 - __main__ - INFO - Scraping content from: https://www.indeed.com/career-advice/career-development/analysis-of-financial-statements
+2025-09-03 17:19:09,231 - __main__ - ERROR - Content scraping failed for https://www.indeed.com/career-advice/career-development/analysis-of-financial-statements: 403 Client Error: Forbidden for url: https://www.indeed.com/career-advice/career-development/analysis-of-financial-statements
+2025-09-03 17:19:09,233 - __main__ - INFO - Scraping content from: https://accountinginsights.org/apple-capital-structure-a-detailed-breakdown-of-key-components/
+2025-09-03 17:19:09,735 - __main__ - INFO - Scraped 7622 characters
+2025-09-03 17:19:09,764 - __main__ - INFO - Analysis completed successfully: Financial Analysis
+2025-09-03 17:20:30,162 - __main__ - INFO - Searching web for: Provide comprehensive overview of TESLA including market size, key players, trends, challenges, and opportunities.
+2025-09-03 17:20:30,322 - primp - INFO - response: https://www.bing.com/search?q=Provide+comprehensive+overview+of+TESLA+including+market+size%2C+key+players%2C+trends%2C+challenges%2C+and+opportunities.&filters=ex1%3A%22ez5_19969_20334%22 200
+2025-09-03 17:20:31,654 - primp - INFO - response: https://www.bing.com/search?q=Provide+comprehensive+overview+of+TESLA+including+market+size%2C+key+players%2C+trends%2C+challenges%2C+and+opportunities.&filters=ex1%3A%22ez5_19969_20334%22&first=11&FORM=PERE 200
+2025-09-03 17:20:32,831 - primp - INFO - response: https://www.bing.com/search?q=Provide+comprehensive+overview+of+TESLA+including+market+size%2C+key+players%2C+trends%2C+challenges%2C+and+opportunities.&filters=ex1%3A%22ez5_19969_20334%22&first=21&FORM=PERE1 200
+2025-09-03 17:20:33,098 - __main__ - INFO - Found 10 search results
+2025-09-03 17:20:33,100 - __main__ - INFO - Scraping content from: https://www.nasdaq.com/articles/market-analysis-tesla-and-competitors-automobiles-industry
+2025-09-03 17:20:43,162 - __main__ - ERROR - Content scraping failed for https://www.nasdaq.com/articles/market-analysis-tesla-and-competitors-automobiles-industry: HTTPSConnectionPool(host='www.nasdaq.com', port=443): Read timed out. (read timeout=10)
+2025-09-03 17:20:43,164 - __main__ - INFO - Scraping content from: https://fiisual.com/blog/post/2024/us-stock-101-tesla-business-overview
+2025-09-03 17:20:43,414 - __main__ - INFO - Scraped 6418 characters
+2025-09-03 17:20:43,417 - __main__ - INFO - Scraping content from: https://www.forinsightsconsultancy.com/ru/сообщениях/ИИ-на-автомобильном-рынке
+2025-09-03 17:20:45,755 - __main__ - INFO - Scraped 15023 characters
+2025-09-03 17:20:45,755 - __main__ - INFO - Scraping content from: https://www.stockwaveinsights.com/teslas-market-challenges-and-strategic-shifts-a-comprehensive-overview/
+2025-09-03 17:20:47,005 - __main__ - INFO - Scraped 2369 characters
+2025-09-03 17:20:47,006 - __main__ - INFO - Scraping content from: https://www.marketresearch.com/Quaintel-Research-v4272/Tesla-TSLA-NASD-Strategic-SWOT-38800105/
+2025-09-03 17:20:47,772 - __main__ - INFO - Scraped 15023 characters
+2025-09-03 17:20:47,773 - __main__ - INFO - Scraping content from: https://fastercapital.com/content/Competitive-Landscape--How-to-Map-and-Monitor-the-Key-Players-in-Your-Industry.html
+2025-09-03 17:20:48,326 - __main__ - INFO - Scraped 0 characters
+2025-09-03 17:20:48,327 - __main__ - INFO - Scraping content from: https://uk.finance.yahoo.com/news/latest-global-aluminium-cables-conductors-163000618.html
+2025-09-03 17:20:48,722 - __main__ - INFO - Scraped 1773 characters
+2025-09-03 17:20:48,726 - __main__ - INFO - Scraping content from: https://news.tradeengine.io/2025/07/30/teslas-market-position-analyzing-tslas-current-challenges-and-opportunities/
+2025-09-03 17:20:49,329 - __main__ - INFO - Scraped 134 characters
+2025-09-03 17:20:49,330 - __main__ - INFO - Scraping content from: https://www.forinsightsconsultancy.com/zu/imibiko/imakethe-yezimoto-exhunyiwe
+2025-09-03 17:20:50,518 - __main__ - INFO - Scraped 15023 characters
+2025-09-03 17:20:50,519 - __main__ - INFO - Scraping content from: https://firmsworld.com/tesla-inc/
+2025-09-03 17:20:51,279 - __main__ - INFO - Searching web for: Provide comprehensive overview of TESLA including market size, key players, trends, challenges, and opportunities.
+2025-09-03 17:20:51,381 - primp - INFO - response: https://www.bing.com/search?q=Provide+comprehensive+overview+of+TESLA+including+market+size%2C+key+players%2C+trends%2C+challenges%2C+and+opportunities.&filters=ex1%3A%22ez5_19969_20334%22 200
+2025-09-03 17:20:51,556 - __main__ - INFO - Scraped 15023 characters
+2025-09-03 17:20:52,652 - primp - INFO - response: https://www.bing.com/search?q=Provide+comprehensive+overview+of+TESLA+including+market+size%2C+key+players%2C+trends%2C+challenges%2C+and+opportunities.&filters=ex1%3A%22ez5_19969_20334%22&first=11&FORM=PERE 200
+2025-09-03 17:20:52,891 - __main__ - INFO - Found 10 search results
+2025-09-03 17:20:52,893 - __main__ - INFO - Scraping content from: https://www.nasdaq.com/articles/market-analysis-tesla-and-competitors-automobiles-industry
+2025-09-03 17:21:02,934 - __main__ - ERROR - Content scraping failed for https://www.nasdaq.com/articles/market-analysis-tesla-and-competitors-automobiles-industry: HTTPSConnectionPool(host='www.nasdaq.com', port=443): Read timed out. (read timeout=10)
+2025-09-03 17:21:02,935 - __main__ - INFO - Scraping content from: https://fiisual.com/blog/post/2024/us-stock-101-tesla-business-overview
+2025-09-03 17:21:03,201 - __main__ - INFO - Scraped 6418 characters
+2025-09-03 17:21:03,202 - __main__ - INFO - Scraping content from: https://www.forinsightsconsultancy.com/ru/сообщениях/ИИ-на-автомобильном-рынке
+2025-09-03 17:21:05,407 - __main__ - INFO - Scraped 15023 characters
+2025-09-03 17:21:05,408 - __main__ - INFO - Scraping content from: https://www.forinsightsconsultancy.com/ko/보고서/자동차-시장의-AI
+2025-09-03 17:21:06,638 - __main__ - INFO - Scraped 10990 characters
+2025-09-03 17:21:06,639 - __main__ - INFO - Scraping content from: https://www.stockwaveinsights.com/teslas-market-challenges-and-strategic-shifts-a-comprehensive-overview/
+2025-09-03 17:21:06,884 - __main__ - INFO - Scraped 2369 characters
+2025-09-03 17:21:06,885 - __main__ - INFO - Scraping content from: https://carstrucksroads.com/tesla-stock-analysis/
+2025-09-03 17:21:10,086 - __main__ - INFO - Scraped 8922 characters
+2025-09-03 17:21:10,087 - __main__ - INFO - Scraping content from: https://www.marketresearch.com/Quaintel-Research-v4272/Tesla-TSLA-NASD-Strategic-SWOT-38800105/
+2025-09-03 17:21:10,864 - __main__ - INFO - Scraped 15023 characters
+2025-09-03 17:21:10,864 - __main__ - INFO - Scraping content from: https://fastercapital.com/content/Competitive-Landscape--How-to-Map-and-Monitor-the-Key-Players-in-Your-Industry.html
+2025-09-03 17:21:11,465 - __main__ - INFO - Scraped 0 characters
+2025-09-03 17:21:11,468 - __main__ - INFO - Scraping content from: https://news.tradeengine.io/2025/07/30/teslas-market-position-analyzing-tslas-current-challenges-and-opportunities/
+2025-09-03 17:21:11,956 - __main__ - INFO - Scraped 134 characters
+2025-09-03 17:21:11,956 - __main__ - INFO - Scraping content from: https://firmsworld.com/tesla-inc/
+2025-09-03 17:21:12,592 - __main__ - INFO - Scraped 15023 characters
+2025-09-03 17:21:12,610 - __main__ - INFO - Analysis completed successfully: Industry Overview
