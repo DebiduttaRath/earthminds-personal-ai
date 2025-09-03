@@ -140,3 +140,5 @@
 2025-09-03 17:21:11,956 - __main__ - INFO - Scraping content from: https://firmsworld.com/tesla-inc/
 2025-09-03 17:21:12,592 - __main__ - INFO - Scraped 15023 characters
 2025-09-03 17:21:12,610 - __main__ - INFO - Analysis completed successfully: Industry Overview
+2025-09-03 19:06:58,758 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
+2025-09-03 19:07:03,986 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'

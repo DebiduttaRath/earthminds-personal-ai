@@ -392,3 +392,10 @@ streamlit
 tenacity
 trafilatura
 trafilatura
+ollama
+transformers
+beautifulsoup4
+duckduckgo-search
+pandas
+plotly
+streamlit
