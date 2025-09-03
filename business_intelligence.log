@@ -35,3 +35,6 @@
 2025-09-03 17:02:57,590 - bi_core.graph - INFO - Business intelligence graph compiled successfully
 2025-09-03 17:02:57,590 - __main__ - INFO - Business intelligence graph initialized
 2025-09-03 17:02:57,604 - bi_core.graph - INFO - Business intelligence graph compiled successfully
+2025-09-03 17:09:02,910 - __main__ - ERROR - ❌ Failed to import BI components: cannot import name 'init_chat_model' from 'langchain_core.language_models' (/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/langchain_core/language_models/__init__.py)
+2025-09-03 17:09:02,914 - __main__ - WARNING - ⚠️ Telemetry initialization failed: name 'setup_telemetry' is not defined
+2025-09-03 17:11:19,061 - __main__ - ERROR - ❌ Failed to import BI components: No module named 'langchain_openai'

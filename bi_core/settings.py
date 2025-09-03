@@ -3,10 +3,11 @@ Configuration settings for the Business Intelligence Platform
 """
 
 from pydantic import BaseModel, Field
+from pydantic_settings import BaseSettings
 import os
 from typing import Optional
 
-class Settings(BaseModel):
+class Settings(BaseSettings):
     # LLM Configuration
     llm_backend: str = Field(default=os.getenv("LLM_BACKEND", "groq"))
     

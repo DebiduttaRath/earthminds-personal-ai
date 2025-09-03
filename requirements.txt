@@ -391,3 +391,4 @@ pydantic-settings
 streamlit
 tenacity
 trafilatura
+trafilatura

@@ -4,9 +4,10 @@ Handles multiple LLM backends with intelligent routing
 """
 
 from typing import Any, Dict, Optional
-from langchain.chat_models import init_chat_model
+from langchain_openai import ChatOpenAI
 from langchain_groq import ChatGroq
 from langchain_community.chat_models import ChatOllama
+from langchain_core.messages import HumanMessage
 import requests
 from bi_core.settings import settings
 from bi_core.telemetry import get_logger
@@ -94,10 +95,10 @@ class LLMFactory:
             "max_tokens": kwargs.get("max_tokens", settings.max_output_tokens),
         }
         
-        # For now, we'll use the OpenAI-compatible interface
+        # Use ChatOpenAI for DeepSeek with OpenAI-compatible interface
         try:
-            llm = init_chat_model(
-                f"openai:{model_name}",
+            llm = ChatOpenAI(
+                model=model_name,
                 api_key=settings.deepseek_api_key,
                 base_url=settings.deepseek_base_url,
                 **config
