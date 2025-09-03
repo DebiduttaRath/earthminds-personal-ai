@@ -27,3 +27,11 @@
 2025-09-02 15:02:44,619 - bi_core.graph - INFO - Business intelligence graph compiled successfully
 2025-09-02 15:02:44,619 - __main__ - INFO - Business intelligence graph initialized
 2025-09-02 15:02:44,633 - bi_core.graph - INFO - Business intelligence graph compiled successfully
+2025-09-03 17:02:50,543 - bi_core.memory_optimizer - INFO - Memory optimizer initialized
+2025-09-03 17:02:55,153 - bi_core.memory_optimizer - INFO - Memory optimizer initialized
+2025-09-03 17:02:55,525 - bi_core.graph - INFO - Business intelligence graph compiled successfully
+2025-09-03 17:02:55,526 - __main__ - INFO - Business intelligence graph initialized
+2025-09-03 17:02:55,549 - bi_core.graph - INFO - Business intelligence graph compiled successfully
+2025-09-03 17:02:57,590 - bi_core.graph - INFO - Business intelligence graph compiled successfully
+2025-09-03 17:02:57,590 - __main__ - INFO - Business intelligence graph initialized
+2025-09-03 17:02:57,604 - bi_core.graph - INFO - Business intelligence graph compiled successfully

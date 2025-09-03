@@ -371,3 +371,23 @@ zipp==3.23.0
     # via importlib-metadata
 zstandard==0.24.0
     # via langsmith
+aiohttp
+beautifulsoup4
+cachetools
+duckduckgo-search
+feedparser
+langchain
+langchain-community
+langchain-core
+langchain-groq
+langgraph
+numpy
+opentelemetry-exporter-otlp
+opentelemetry-sdk
+plotly
+psutil
+pydantic
+pydantic-settings
+streamlit
+tenacity
+trafilatura

@@ -2,7 +2,7 @@ modules = ["python-3.11", "bash"]
 
 [nix]
 channel = "stable-25_05"
-packages = ["bash", "libxcrypt"]
+packages = ["arrow-cpp", "bash", "c-ares", "cacert", "cargo", "freetype", "glibcLocales", "grpc", "lcms2", "libiconv", "libimagequant", "libjpeg", "libtiff", "libwebp", "libxcrypt", "libyaml", "openjpeg", "openssl", "pkg-config", "rustc", "tcl", "tk", "xcodebuild", "zlib"]
 
 [deployment]
 deploymentTarget = "autoscale"
@@ -24,17 +24,16 @@ args = "Business Intelligence Platform"
 name = "Business Intelligence Platform"
 author = "agent"
 
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "streamlit run main.py --server.port 5000"
-waitForPort = 5000
-
 [workflows.workflow.metadata]
 outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "streamlit run main.py --server.port 5000 --server.address 0.0.0.0"
+waitForPort = 5000
 
 [[ports]]
 localPort = 5000
 externalPort = 80
 
 [agent]
-integrations = ["web_scraper==1.0.0"]
