@@ -14,6 +14,27 @@ import traceback
 import re
 import pandas as pd
 from datetime import datetime, timedelta
+
+# === Integrated backend imports ===
+try:
+    from bi_core.llm_factory import get_smart_llm, get_llm
+    from bi_core.business_workflows import (
+        execute_market_research_workflow,
+        quick_competitive_analysis,
+        quick_investment_screening
+    )
+    from bi_core.settings import settings as BI_SETTINGS
+    CORE_BACKEND_AVAILABLE = True
+except Exception as _e:
+    CORE_BACKEND_AVAILABLE = False
+
+# Use centralized scraper as fallback
+try:
+    from utils.web_scraper import get_website_text_content as trafilatura_scrape
+    TRAFILATURA_AVAILABLE = True
+except Exception:
+    TRAFILATURA_AVAILABLE = False
+
 from typing import Dict, List, Any, Optional
 from bs4 import BeautifulSoup
 from duckduckgo_search import DDGS
@@ -255,6 +276,20 @@ class GlobalWebScrapingEngine:
             logger.error(f"Enhanced scraping failed for {url}: {e}")
             return f"Error scraping {url}: {str(e)}"
     
+            # --- Added Trafilatura fallback ---
+            if (not extracted_text or len(extracted_text) < 500) and TRAFILATURA_AVAILABLE:
+                try:
+                    t_text = trafilatura_scrape(url)
+                    if t_text and len(t_text) > (len(extracted_text) if extracted_text else 0):
+                        extracted_text = t_text
+                except Exception as _t_err:
+                    logger.warning(f"Trafilatura fallback failed: {_t_err}")
+
+            if not extracted_text:
+                raise ValueError('No content extracted from the URL')
+
+            cleaned_text_final = self._clean_extracted_text(extracted_text)
+            return cleaned_text_final
     def _extract_main_content(self, soup: BeautifulSoup) -> Optional:
         """Extract main content using multiple strategies"""
         # Strategy 1: Look for semantic HTML5 tags
@@ -515,9 +550,47 @@ def get_web_engine():
     return GlobalWebScrapingEngine()
 
 @st.cache_resource  
-def get_llm_engine():
-    return SimpleLLMEngine()
 
+
+class BackendLLMEngine:
+    """Wrapper around bi_core backend/workflows to keep UI unchanged."""
+    def __init__(self):
+        self.available = CORE_BACKEND_AVAILABLE
+
+    def generate_analysis(self, query: str, context: str, analysis_type: str) -> str:
+        # Prefer specialized workflows when possible
+        if not self.available:
+            raise RuntimeError("bi_core backend not available")
+        try:
+            import asyncio
+            analysis_type_lower = (analysis_type or "").lower()
+            if "market" in analysis_type_lower:
+                result = asyncio.run(execute_market_research_workflow(query))
+            elif "competitive" in analysis_type_lower:
+                result = asyncio.run(quick_competitive_analysis(query))
+            elif "investment" in analysis_type_lower or "screen" in analysis_type_lower:
+                result = asyncio.run(quick_investment_screening(query))
+            else:
+                # Generic chat: route to smart LLM
+                llm = get_smart_llm()
+                prompt = f"You are a business analyst. Use the provided context to answer.\n\nContext:\n{context[:4000]}\n\nQuestion: {query}"
+                resp = llm.invoke(prompt)
+                if hasattr(resp, 'content'):
+                    return resp.content
+                return str(resp)
+            if isinstance(result, dict):
+                summary = result.get("summary") or result.get("analysis") or json.dumps(result, indent=2)
+                return f"## Analysis\n\n{summary}"
+            return str(result)
+        except Exception as e:
+            raise
+
+
+def get_llm_engine():
+    # Prefer backend if available and API keys configured
+    if 'BI_SETTINGS' in globals() and CORE_BACKEND_AVAILABLE and (BI_SETTINGS.groq_api_key or BI_SETTINGS.deepseek_api_key or BI_SETTINGS.openai_api_key):
+        return BackendLLMEngine()
+    return SimpleLLMEngine()
 # Page configuration
 st.set_page_config(
     page_title="🚀 Business Intelligence Platform",

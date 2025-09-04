@@ -399,3 +399,4 @@ duckduckgo-search
 pandas
 plotly
 streamlit
+openai

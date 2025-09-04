@@ -142,3 +142,104 @@
 2025-09-03 17:21:12,610 - __main__ - INFO - Analysis completed successfully: Industry Overview
 2025-09-03 19:06:58,758 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
 2025-09-03 19:07:03,986 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
+2025-09-03 19:08:11,304 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
+2025-09-03 19:08:53,144 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
+2025-09-03 19:08:53,371 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
+2025-09-03 19:08:53,472 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
+2025-09-03 19:08:53,481 - __main__ - INFO - Global web search for: Analyze current and emerging trends in [Logistics Industry,AI TECHNOLOGY. Include adoption rates, market impact, and future predictions. (region: us-en)
+2025-09-03 19:08:53,878 - primp - INFO - response: https://www.bing.com/search?q=Analyze+current+and+emerging+trends+in+%5BLogistics+Industry%2CAI+TECHNOLOGY.+Include+adoption+rates%2C+market+impact%2C+and+future+predictions.&filters=ex1%3A%22ez3%22 200
+2025-09-03 19:08:55,174 - primp - INFO - response: https://www.bing.com/search?q=Analyze+current+and+emerging+trends+in+%5BLogistics+Industry%2CAI+TECHNOLOGY.+Include+adoption+rates%2C+market+impact%2C+and+future+predictions.&filters=ex1%3A%22ez3%22&first=11&FORM=PERE 200
+2025-09-03 19:08:56,407 - primp - INFO - response: https://www.bing.com/search?q=Analyze+current+and+emerging+trends+in+%5BLogistics+Industry%2CAI+TECHNOLOGY.+Include+adoption+rates%2C+market+impact%2C+and+future+predictions.&filters=ex1%3A%22ez3%22&first=21&FORM=PERE1 200
+2025-09-03 19:08:57,540 - primp - INFO - response: https://www.bing.com/search?q=Analyze+current+and+emerging+trends+in+%5BLogistics+Industry%2CAI+TECHNOLOGY.+Include+adoption+rates%2C+market+impact%2C+and+future+predictions.&filters=ex1%3A%22ez3%22&first=31&FORM=PERE2 200
+2025-09-03 19:08:57,761 - __main__ - INFO - Found 8 global search results
+2025-09-03 19:08:57,766 - __main__ - INFO - Scraping content from: https://www.tandfonline.com/doi/full/10.1080/21645515.2025.2553454
+2025-09-03 19:08:57,888 - __main__ - WARNING - Attempt 1 failed for https://www.tandfonline.com/doi/full/10.1080/21645515.2025.2553454: 403 Client Error: Forbidden for url: https://www.tandfonline.com/doi/full/10.1080/21645515.2025.2553454
+2025-09-03 19:08:58,987 - __main__ - WARNING - Attempt 2 failed for https://www.tandfonline.com/doi/full/10.1080/21645515.2025.2553454: 403 Client Error: Forbidden for url: https://www.tandfonline.com/doi/full/10.1080/21645515.2025.2553454
+2025-09-03 19:09:00,063 - __main__ - WARNING - Attempt 3 failed for https://www.tandfonline.com/doi/full/10.1080/21645515.2025.2553454: 403 Client Error: Forbidden for url: https://www.tandfonline.com/doi/full/10.1080/21645515.2025.2553454
+2025-09-03 19:09:00,064 - __main__ - ERROR - Enhanced scraping failed for https://www.tandfonline.com/doi/full/10.1080/21645515.2025.2553454: 403 Client Error: Forbidden for url: https://www.tandfonline.com/doi/full/10.1080/21645515.2025.2553454
+2025-09-03 19:09:00,066 - __main__ - INFO - Scraping content from: https://explodingtopics.com/blog/technology-trends
+2025-09-03 19:09:02,070 - __main__ - INFO - Successfully scraped 20038 characters from https://explodingtopics.com/blog/technology-trends
+2025-09-03 19:09:02,072 - __main__ - INFO - Scraping content from: https://techspective.net/2025/01/28/how-digital-adoption-platforms-will-impact-the-market-in-2025/
+2025-09-03 19:09:02,370 - __main__ - INFO - Successfully scraped 20038 characters from https://techspective.net/2025/01/28/how-digital-adoption-platforms-will-impact-the-market-in-2025/
+2025-09-03 19:09:02,370 - __main__ - INFO - Scraping content from: https://www.statista.com/topics/8666/logistics-industry-in-thailand/
+2025-09-03 19:09:05,233 - __main__ - INFO - Successfully scraped 12853 characters from https://www.statista.com/topics/8666/logistics-industry-in-thailand/
+2025-09-03 19:09:05,236 - __main__ - INFO - Scraping content from: https://en.wikipedia.org/wiki/Futures_studies
+2025-09-03 19:09:05,763 - __main__ - INFO - Successfully scraped 0 characters from https://en.wikipedia.org/wiki/Futures_studies
+2025-09-03 19:09:05,764 - __main__ - INFO - Scraping content from: https://nxtforum.org/general/how-does-nxt-fix-the-nothing-at-stake-problem/100/index.html
+2025-09-03 19:09:06,712 - __main__ - INFO - Successfully scraped 13888 characters from https://nxtforum.org/general/how-does-nxt-fix-the-nothing-at-stake-problem/100/index.html
+2025-09-03 19:09:06,713 - __main__ - INFO - Scraping content from: https://nxtforum.org/news-and-announcements/another-small-contest-and-product-of-the-month/index.html
+2025-09-03 19:09:06,910 - __main__ - INFO - Successfully scraped 4795 characters from https://nxtforum.org/news-and-announcements/another-small-contest-and-product-of-the-month/index.html
+2025-09-03 19:09:06,911 - __main__ - INFO - Scraping content from: https://link.springer.com/article/10.1007/s10462-025-11342-3
+2025-09-03 19:09:08,774 - __main__ - INFO - Successfully scraped 20038 characters from https://link.springer.com/article/10.1007/s10462-025-11342-3
+2025-09-03 19:09:08,801 - __main__ - ERROR - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb7bdf7c390>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-03 19:09:56,429 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
+2025-09-03 19:10:03,219 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
+2025-09-03 19:10:03,304 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
+2025-09-03 19:10:03,311 - __main__ - INFO - Global web search for: Analyze current and emerging trends in [Logistics Industry,AI TECHNOLOGY. Include adoption rates, market impact, and future predictions. (region: us-en)
+2025-09-03 19:10:03,546 - primp - INFO - response: https://www.bing.com/search?q=Analyze+current+and+emerging+trends+in+%5BLogistics+Industry%2CAI+TECHNOLOGY.+Include+adoption+rates%2C+market+impact%2C+and+future+predictions.&filters=ex1%3A%22ez3%22 200
+2025-09-03 19:10:03,588 - __main__ - INFO - Found 0 global search results
+2025-09-03 19:10:03,592 - __main__ - ERROR - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb7bdf11cd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-03 19:10:03,594 - __main__ - ERROR - Analysis execution failed: division by zero
+2025-09-03 19:12:57,224 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
+2025-09-03 19:13:00,700 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
+2025-09-03 19:13:04,553 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
+2025-09-03 19:13:27,635 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
+2025-09-03 19:13:27,868 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
+2025-09-03 19:13:27,948 - __main__ - WARNING - ⚠️ Core BI components not available: No module named 'langchain_openai'
+2025-09-03 19:13:27,956 - __main__ - INFO - Global web search for: Conduct detailed financial analysis of [MICROSOFT} including revenue, profitability, debt analysis, and financial health assessment. (region: us-en)
+2025-09-03 19:13:28,174 - primp - INFO - response: https://www.bing.com/search?q=Conduct+detailed+financial+analysis+of+%5BMICROSOFT%7D+including+revenue%2C+profitability%2C+debt+analysis%2C+and+financial+health+assessment.&filters=ex1%3A%22ez3%22 200
+2025-09-03 19:13:29,087 - primp - INFO - response: https://www.bing.com/search?q=Conduct+detailed+financial+analysis+of+%5BMICROSOFT%7D+including+revenue%2C+profitability%2C+debt+analysis%2C+and+financial+health+assessment.&filters=ex1%3A%22ez3%22&first=11&FORM=PERE 200
+2025-09-03 19:13:29,952 - primp - INFO - response: https://www.bing.com/search?q=Conduct+detailed+financial+analysis+of+%5BMICROSOFT%7D+including+revenue%2C+profitability%2C+debt+analysis%2C+and+financial+health+assessment.&filters=ex1%3A%22ez3%22&first=21&FORM=PERE1 200
+2025-09-03 19:13:30,882 - primp - INFO - response: https://www.bing.com/search?q=Conduct+detailed+financial+analysis+of+%5BMICROSOFT%7D+including+revenue%2C+profitability%2C+debt+analysis%2C+and+financial+health+assessment.&filters=ex1%3A%22ez3%22&first=31&FORM=PERE2 200
+2025-09-03 19:13:31,873 - primp - INFO - response: https://www.bing.com/search?q=Conduct+detailed+financial+analysis+of+%5BMICROSOFT%7D+including+revenue%2C+profitability%2C+debt+analysis%2C+and+financial+health+assessment.&filters=ex1%3A%22ez3%22&first=41&FORM=PERE3 200
+2025-09-03 19:13:31,903 - __main__ - INFO - Found 5 global search results
+2025-09-03 19:13:31,904 - __main__ - INFO - Scraping content from: https://www.merriam-webster.com/dictionary/conduct
+2025-09-03 19:13:32,176 - __main__ - INFO - Successfully scraped 20038 characters from https://www.merriam-webster.com/dictionary/conduct
+2025-09-03 19:13:32,178 - __main__ - INFO - Scraping content from: https://dictionary.cambridge.org/us/dictionary/english/conduct
+2025-09-03 19:13:33,043 - __main__ - INFO - Successfully scraped 12867 characters from https://dictionary.cambridge.org/us/dictionary/english/conduct
+2025-09-03 19:13:33,044 - __main__ - INFO - Scraping content from: https://www.dictionary.com/browse/Conduct
+2025-09-03 19:13:33,172 - __main__ - INFO - Successfully scraped 20038 characters from https://www.dictionary.com/browse/Conduct
+2025-09-03 19:13:33,173 - __main__ - INFO - Scraping content from: https://www.collinsdictionary.com/dictionary/english/conduct
+2025-09-03 19:13:33,276 - __main__ - WARNING - Attempt 1 failed for https://www.collinsdictionary.com/dictionary/english/conduct: 403 Client Error: Forbidden for url: https://www.collinsdictionary.com/dictionary/english/conduct
+2025-09-03 19:13:34,343 - __main__ - WARNING - Attempt 2 failed for https://www.collinsdictionary.com/dictionary/english/conduct: 403 Client Error: Forbidden for url: https://www.collinsdictionary.com/dictionary/english/conduct
+2025-09-03 19:13:35,425 - __main__ - WARNING - Attempt 3 failed for https://www.collinsdictionary.com/dictionary/english/conduct: 403 Client Error: Forbidden for url: https://www.collinsdictionary.com/dictionary/english/conduct
+2025-09-03 19:13:35,426 - __main__ - ERROR - Enhanced scraping failed for https://www.collinsdictionary.com/dictionary/english/conduct: 403 Client Error: Forbidden for url: https://www.collinsdictionary.com/dictionary/english/conduct
+2025-09-03 19:13:35,428 - __main__ - INFO - Scraping content from: https://www.thefreedictionary.com/conduct
+2025-09-03 19:13:35,507 - __main__ - WARNING - Attempt 1 failed for https://www.thefreedictionary.com/conduct: 403 Client Error: Forbidden for url: https://www.thefreedictionary.com/conduct
+2025-09-03 19:13:36,859 - __main__ - WARNING - Attempt 2 failed for https://www.thefreedictionary.com/conduct: 403 Client Error: Forbidden for url: https://www.thefreedictionary.com/conduct
+2025-09-03 19:13:38,010 - __main__ - WARNING - Attempt 3 failed for https://www.thefreedictionary.com/conduct: 403 Client Error: Forbidden for url: https://www.thefreedictionary.com/conduct
+2025-09-03 19:13:38,011 - __main__ - ERROR - Enhanced scraping failed for https://www.thefreedictionary.com/conduct: 403 Client Error: Forbidden for url: https://www.thefreedictionary.com/conduct
+2025-09-03 19:13:38,030 - __main__ - ERROR - Ollama call failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb7bc454390>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-04 13:41:15,471 - bi_core.memory_optimizer - INFO - Memory optimizer initialized
+2025-09-04 13:42:38,224 - primp - INFO - response: https://www.bing.com/search?q=%F0%9F%92%A1+Tesla+vs+Chinese+EV+manufacturers+competitive+analysis&filters=ex1%3A%22ez3%22 200
+2025-09-04 13:42:39,337 - primp - INFO - response: https://www.bing.com/search?q=%F0%9F%92%A1+Tesla+vs+Chinese+EV+manufacturers+competitive+analysis&filters=ex1%3A%22ez3%22&first=11&FORM=PERE 200
+2025-09-04 13:42:40,446 - primp - INFO - response: https://www.bing.com/search?q=%F0%9F%92%A1+Tesla+vs+Chinese+EV+manufacturers+competitive+analysis&filters=ex1%3A%22ez3%22&first=21&FORM=PERE1 200
+2025-09-04 13:42:41,616 - primp - INFO - response: https://www.bing.com/search?q=%F0%9F%92%A1+Tesla+vs+Chinese+EV+manufacturers+competitive+analysis&filters=ex1%3A%22ez3%22&first=31&FORM=PERE2 200
+2025-09-04 13:42:42,751 - primp - INFO - response: https://www.bing.com/search?q=%F0%9F%92%A1+Tesla+vs+Chinese+EV+manufacturers+competitive+analysis&filters=ex1%3A%22ez3%22&first=41&FORM=PERE3 200
+2025-09-04 13:42:42,825 - __main__ - INFO - Found 5 global search results
+2025-09-04 13:42:42,825 - __main__ - INFO - Scraping content from: https://www.zhihu.com/pin/1899120529329362934
+2025-09-04 13:42:43,471 - __main__ - WARNING - Attempt 1 failed for https://www.zhihu.com/pin/1899120529329362934: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1899120529329362934
+2025-09-04 13:42:44,731 - __main__ - WARNING - Attempt 2 failed for https://www.zhihu.com/pin/1899120529329362934: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1899120529329362934
+2025-09-04 13:42:45,967 - __main__ - WARNING - Attempt 3 failed for https://www.zhihu.com/pin/1899120529329362934: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1899120529329362934
+2025-09-04 13:42:45,967 - __main__ - ERROR - Enhanced scraping failed for https://www.zhihu.com/pin/1899120529329362934: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1899120529329362934
+2025-09-04 13:42:45,983 - __main__ - INFO - Scraping content from: https://www.zhihu.com/pin/1454468357114769408
+2025-09-04 13:42:46,215 - __main__ - WARNING - Attempt 1 failed for https://www.zhihu.com/pin/1454468357114769408: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1454468357114769408
+2025-09-04 13:42:47,482 - __main__ - WARNING - Attempt 2 failed for https://www.zhihu.com/pin/1454468357114769408: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1454468357114769408
+2025-09-04 13:42:48,737 - __main__ - WARNING - Attempt 3 failed for https://www.zhihu.com/pin/1454468357114769408: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1454468357114769408
+2025-09-04 13:42:48,738 - __main__ - ERROR - Enhanced scraping failed for https://www.zhihu.com/pin/1454468357114769408: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1454468357114769408
+2025-09-04 13:42:48,739 - __main__ - INFO - Scraping content from: https://www.zhihu.com/people/fu-sheng-si-yue
+2025-09-04 13:42:48,985 - __main__ - WARNING - Attempt 1 failed for https://www.zhihu.com/people/fu-sheng-si-yue: 403 Client Error: Forbidden for url: https://www.zhihu.com/people/fu-sheng-si-yue
+2025-09-04 13:42:50,252 - __main__ - WARNING - Attempt 2 failed for https://www.zhihu.com/people/fu-sheng-si-yue: 403 Client Error: Forbidden for url: https://www.zhihu.com/people/fu-sheng-si-yue
+2025-09-04 13:42:51,515 - __main__ - WARNING - Attempt 3 failed for https://www.zhihu.com/people/fu-sheng-si-yue: 403 Client Error: Forbidden for url: https://www.zhihu.com/people/fu-sheng-si-yue
+2025-09-04 13:42:51,516 - __main__ - ERROR - Enhanced scraping failed for https://www.zhihu.com/people/fu-sheng-si-yue: 403 Client Error: Forbidden for url: https://www.zhihu.com/people/fu-sheng-si-yue
+2025-09-04 13:42:51,517 - __main__ - INFO - Scraping content from: https://www.zhihu.com/pin/1734698333359333376
+2025-09-04 13:42:51,753 - __main__ - WARNING - Attempt 1 failed for https://www.zhihu.com/pin/1734698333359333376: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1734698333359333376
+2025-09-04 13:42:52,997 - __main__ - WARNING - Attempt 2 failed for https://www.zhihu.com/pin/1734698333359333376: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1734698333359333376
+2025-09-04 13:42:54,262 - __main__ - WARNING - Attempt 3 failed for https://www.zhihu.com/pin/1734698333359333376: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1734698333359333376
+2025-09-04 13:42:54,263 - __main__ - ERROR - Enhanced scraping failed for https://www.zhihu.com/pin/1734698333359333376: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1734698333359333376
+2025-09-04 13:42:54,266 - __main__ - INFO - Scraping content from: https://www.zhihu.com/pin/1738496824464404480
+2025-09-04 13:42:54,585 - __main__ - WARNING - Attempt 1 failed for https://www.zhihu.com/pin/1738496824464404480: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1738496824464404480
+2025-09-04 13:42:55,848 - __main__ - WARNING - Attempt 2 failed for https://www.zhihu.com/pin/1738496824464404480: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1738496824464404480
+2025-09-04 13:42:57,118 - __main__ - WARNING - Attempt 3 failed for https://www.zhihu.com/pin/1738496824464404480: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1738496824464404480
+2025-09-04 13:42:57,119 - __main__ - ERROR - Enhanced scraping failed for https://www.zhihu.com/pin/1738496824464404480: 403 Client Error: Forbidden for url: https://www.zhihu.com/pin/1738496824464404480
+2025-09-04 14:11:19,496 - bi_core.memory_optimizer - INFO - Memory optimizer initialized
